@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body style="background-color:rgba(4, 4, 4, 0.926)">
+    <div class="ab">
+
+            
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="room.html">Rooms</a></li>
+        <li><a href="dining.html">Dining & Restaurent</a></li>
+        <li><a href="event.html">Events & Activity</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li style="float:right"><a class="active" href="book.html">Book Now</a></li>
+      </ul>
+          <div class="as">
+            <img src="css/book.jpg" alt="" height="200px" width="100%" style="height: 500px;">
+            <div class="as-text">
+              <h1 style="font-family:'Times New Roman', Times, serif; margin-top:70px; font-size: 90px;">Book Your Stay
+                </h1>
+              <h5 style="font-family:'Times New Roman', Times, serif; margin-top:100px;text-align: center; ">When it comes to fine dining restaurants in Delhi, <br>The Roseate stands out from the <br> crowd</h5>
+            </div>
+          </div>
+      <div class="container text-center bb">
+        <div class="row cc">
+         
+          <div class="col-sm-6 nn" style="border-radius: 180px;">
+            <form class="booking-form" action="home.jsp" method="post" style="margin-right: 50px;" >
+              <h2 style="font-family: 'Times New Roman', Times, serif; margin-top: 30px; color:rgb(248, 247, 247);">Get in touch with us.</h2>
+                <div class="elem-group">
+                  
+                  <input type="text"style="background-color:white;" id="name" name="visitor_name" placeholder="Name" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                  <label for="email"></label>
+                  <input type="email"style="background-color:white;" id="email" name="visitor_email" placeholder="Email" required>
+                </div>
+                <div class="elem-group">
+                  <label for="phone"></label>
+                  <input type="tel" style="background-color: white;" id="phone" name="visitor_phone" placeholder="Phone" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+                <div class="elem-group inlined">
+                  <label for="adult"style="color:white;">Adults</label>
+                  <input type="number" style="background-color:white;"id="adult" name="total_adults" placeholder="2" min="1" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label for="child"style="color:white;">Children</label>
+                  <input type="number"style="background-color:white;" id="child" name="total_children" placeholder="2" min="0" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label for="checkin-date"style="color:white;">Check-in </label>
+                  <input type="date" id="checkin-date" name="checkin" required style="background-color: white;;color:black;" >
+                </div>
+                <div class="elem-group inlined">
+                  <label for="checkout-date"style="color:white;">Check-out</label>
+                  <input type="date" style="background-color: white;; color:black;" id="checkout-date" name="checkout" required>
+                </div>
+                <div class="elem-group">
+                  <label for="email"></label>
+                  <input type="text" style="margin-top: 15px;height: 60px;background-color:white;"id="email" name="visitor_email" placeholder="Message" required>
+              </div>
+                <button class="q" style="margin-top: 20px; background-color:teal; color: black; :hover{background: white;}" type="submit" id="book_room" onclick="fun()" required>Book The Rooms</button>
+                  </form>
+          </div>
+          <div class="col-sm-6 nn" style="margin-top: 80px;" >
+            <h1 style="font-family: 'Times New Roman', Times, serif; color: rgb(251, 250, 250);">Policies:</h1> <hr style="width: 150px; color:rgb(6, 254, 254); margin-left:36%;">
+            <h5 style="color:rgb(252, 251, 251);">Guarantee Policy</h5>
+            <p style="color: rgb(254, 250, 250);">A credit card guarantee is required at the  <br>timeof reservation.Rebooking should be done <br> at least 72  hours before arrival. 
+            </p>
+            <hr style="width: 280px; margin-left: 25%; color:rgb(2, 253, 253)">
+            <h5 style="color:rgb(252, 251, 251);">Cancel Policy</h5>
+            <p style="color: rgb(254, 252, 252);">Reservations must be cancelled 72 hours prior  <br>to arrival to avoid a penalty equal to a <br> one night's stay. </p>
+            <hr style="width: 280px; margin-left: 25%; color:rgb(4, 251, 251);">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="" style="background-color:rgb(31, 31, 32)">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 style="color:rgb(250, 250, 250);margin-top: 30px;"class="text-uppercase fw-bold mb-4">
+            <i  class="fas fa-gem me-3"></i>GreenCloud
+          </h6>
+          <p style="color: white;" >
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"style="color: white;margin-top: 30px;" >
+          <!-- Links -->
+          <h6   class="text-uppercase fw-bold mb-4" style="color:rgb(255, 255, 255);">
+            Products
+          </h6>
+          <p>
+            <a  href="#!" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Room</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Dining & Restaurent</a>
+          </p>
+          <p>
+            <a  href="#!" class="text-reset">Event & Activity</a>
+          </p>
+          <p>
+            <a  href="#!" class="text-reset">Gallery</a>
+          </p>
+          <p>
+            <a  href="#!" class="text-reset">Contact</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="color: white;margin-top: 30px;" >
+          <!-- Links -->
+          <h6  style="color:rgb(252, 252, 250);" class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a  href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"style="color: white;margin-top: 30px;" >
+          <!-- Links -->
+          <h6  class="text-uppercase fw-bold mb-4" style="color:rgb(251, 251, 250);">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i  class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i  class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color:teal;color:rgb(253, 253, 253);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    </div>
+    <script>
+     function fun(){
+      alert("Your room is successfully booked")
+     }
+    </script>
+</body>
+</html>
