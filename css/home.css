@@ -329,8 +329,410 @@ html {
   background-color:rgb(2, 66, 66);
 }
 
-@media only screen and(max-width:600px){
-
+@media screen and (max-width: 768px){
+h4{
+  font-size: 3px;
+  line-height: 50px;
+}
   
 }
 
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.108);
+  backdrop-filter: blur(5px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+.sidebar li{
+  width: 100%;
+
+}
+.sidebar a{
+  width: 100%;
+}
+.menu{
+  display: none;
+}
+
+@media(max-width: 800px){
+  .hideonmobile{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+  
+    .carousel-inner .carousel-item img {
+      height: auto; /* Adjust image height for medium screens */
+    width: 100%;}
+  
+    .carousel-caption h3 {
+      font-size: 20px; /* Slightly smaller heading */
+      margin-bottom: 15px;
+      color: rgb(242, 218, 5);
+    }
+    
+    .carousel-caption h1 {
+      font-size: 40px; /* Reduced font size for main text */
+      margin-bottom: 60px;
+      line-height: 1.4; /* Adjust line height for readability */
+    }
+  
+    .carousel-caption {
+      bottom: 30px; /* Position caption slightly higher */
+      padding: 0 20px; /* Add padding for balanced spacing */
+    }
+   
+  
+  
+    .col-md-6.cl1 {
+      padding: 20px; /* Add padding for balanced spacing */
+      text-align: center; /* Center-align text for better layout on smaller screens */
+    }
+  
+    .col-md-6.cl1 h4 {
+      font-size: 20px; /* Adjust heading font size */
+      margin-bottom: 10px;
+    }
+  
+    .col-md-6.cl1 h1 {
+      font-size: 28px; /* Reduce main title font size */
+      margin-bottom: 15px;
+      line-height: 1.2; /* Adjust line height for readability */
+    }
+  
+    .col-md-6.cl1 h5 {
+      font-size: 20px; /* Reduce body text font size */
+      line-height: 1.5; /* Increase line height for readability */
+      margin-bottom: 20px;
+    }
+    
+   
+      .col-md-6 img {
+      margin-left: 170px;
+        width: 100%; /* Make image responsive to container width */
+        max-width: 100%; /* Ensure image does not exceed container width */
+        height: auto; /* Maintain aspect ratio */
+      }
+    
+      .col-md-6 {
+        padding: 15px; /* Add some padding around the image */
+        text-align: center; /* Center-align for better layout on smaller screens */
+      }
+
+      
+      
+        /* General styling for alignment and padding */
+        .text, .car1 .title {
+          text-align: center;
+          padding: 15px;
+        }
+      
+        .text h4 {
+          font-size: 18px; /* Adjust subheading font size */
+          color: white;
+        }
+      
+        .text h1 {
+          font-size: 24px; /* Adjust main heading font size */
+          line-height: 1.2;
+          color: white;
+        }
+      
+        /* Title section for Exclusive Restaurants */
+        .car1 .title h3 {
+          font-size: 18px; /* Smaller font size */
+          color: teal;
+        }
+      
+        .car1 .title h1.dine {
+          font-size: 24px; /* Smaller font for main title */
+          line-height: 1.3;
+          color: white;
+        }
+      
+        /* Restaurant card layout */
+        .car .row {
+          flex-direction: column; /* Stack restaurant cards vertically */
+          align-items: center;
+        }
+      
+        .car .col-md-4 {
+          width: 100%;
+          max-width: 350px;
+          margin-bottom: 20px; /* Space between cards */
+        }
+      
+        .car .card {
+          width: 100%;
+          background-color: rgb(55, 54, 54);
+        }
+      
+        .car .card-body h5 {
+          font-size: 22px; /* Adjust card title size */
+          color: teal;
+        }
+      
+        .car .card-body p {
+          font-size: 14px;
+          color: rgb(252, 252, 252);
+        }
+      
+        /* Flip-box styling */
+        .as .row {
+          flex-direction: column; /* Stack flip-boxes vertically */
+          align-items: center;
+        }
+      
+        .as .col-md-4 {
+          width: 100%;
+          max-width: 350px;
+          margin-bottom: 20px; /* Space between flip-boxes */
+        }
+      
+        .flip-box {
+          width: 100%;
+          height: auto; /* Auto height to fit content */
+        }
+      
+        .flip-box-front, .flip-box-back {
+          background-size: cover;
+          background-position: center;
+        }
+      
+        .flip-box .inner {
+          padding: 15px; /* Add padding for inner content */
+        }
+      
+        .flip-box-header {
+          font-size: 22px; /* Adjust flip-box title font size */
+          color: white;
+        }
+      
+        .flip-box p {
+          font-size: 14px; /* Smaller font for description */
+          line-height: 1.4;
+          color: white;
+        }
+      
+        .flip-box-button {
+          font-size: 14px;
+          padding: 8px 16px; /* Smaller padding for buttons */
+          margin-top: 10px;
+          color: teal;
+          background-color: white;
+          border: none;
+          cursor: pointer;
+        }
+      
+        .flip-box-button:hover {
+          background-color: teal;
+          color: white;
+        }
+       
+          /* Center the text and reduce spacing for mobile view */
+          .one h5 {
+            font-size: 16px;
+            text-align: center;
+            color: rgb(249, 245, 244);
+            margin-top: 30px;
+          }
+        
+          .one h1 {
+            font-size: 24px;
+            text-align: center;
+            font-family: 'monospace';
+            color: white;
+            margin-top: 15px;
+          }
+        
+          .one p {
+            font-size: 16px;
+            text-align: center;
+            line-height: 1.5;
+            color: gainsboro;
+            margin-top: 10px;
+            padding: 0 20px; /* Adds padding for better readability on smaller screens */
+          }
+        
+          /* Stack columns and adjust spacing for images and titles */
+          .one .container .row {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;
+          }
+        
+          .one .container .col-md-4 {
+            margin-bottom: 20px; /* Adds spacing between stacked items */
+            text-align: center;
+          }
+        
+          .one .container .col-md-4 img {
+            width: 120px; /* Slightly reduce icon size */
+            height: 120px;
+          }
+        
+          .one .container .col-md-4 h5 {
+            font-size: 18px; /* Adjust font size for amenity titles */
+            margin-top: 10px;
+            color: white;
+          }
+        
+            /* Container adjustments for mobile */
+            .container.text-center {
+              margin-top: 30px;
+              padding: 0 15px; /* Add padding for a clean look on mobile */
+            }
+          
+            /* Stack image and text vertically and center-align */
+            .container.text-center .row {
+              flex-direction: column;
+              align-items: center;
+            }
+          
+            .container.text-center .col-md-6 img {
+              width: 100%; /* Make the image responsive */
+              height: auto; /* Maintain aspect ratio */
+              margin-right: 0; /* Remove extra margin on mobile */
+              padding-right: 0;
+            }
+          
+            /* Text styling adjustments */
+            .container.text-center h1 {
+              font-size: 40px; /* Reduce heading size for mobile */
+              text-align: center;
+              font-family: 'Times New Roman', Times, serif;
+              color: rgb(251, 251, 253);
+              margin-top: 20px;
+            }
+          
+            .container.text-center p {
+              font-size: 16px; /* Reduce font size for mobile readability */
+              text-align: center; /* Center-align text for mobile */
+              color: white;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              margin-top: 15px;
+            }
+            
+              .booking {
+                height: auto; /* Allow height to adjust based on content */
+                margin-top: 30px; /* Reduce top margin for smaller screens */
+                padding: 20px; /* Add padding for better spacing */
+              }
+            
+              .booking .container {
+                margin-top: 20px; /* Reduce margin for mobile */
+              }
+            
+              .booking h1 {
+                font-size: 30px; /* Reduce heading size for mobile */
+                text-align: center; /* Center align heading */
+              }
+            
+              .booking p {
+                font-size: 16px; /* Reduce paragraph size for better readability */
+                text-align: center; /* Center align paragraph */
+              }
+            
+              .booking .row {
+                flex-direction: column; /* Stack columns vertically */
+                align-items: center; /* Center align content */
+              }
+            
+              .booking .col-md-6 {
+                width: 100%; /* Full width for each column */
+                margin-bottom: 20px; /* Space between columns */
+              }
+            
+              /* Style adjustments for form elements */
+              .booking .form-control {
+                width: 90%; /* Full width of the input fields */
+                margin: 0 auto; /* Center the inputs */
+              }
+            
+              .booking .btn {
+                width: 90%; /* Button full width */
+                margin: 20px auto; /* Center the button */
+              }
+              .container {
+                margin-top: 3000px;
+              }
+              .car1{
+                height: 1650px;
+              }
+              .one{
+                height: 850px;
+              }
+              .row  .col-md-6 .f2{
+               
+                margin-left: 42px;
+              }
+              .contact {
+                
+                background-color: black;
+                
+              
+              }
+            footer{
+              
+              padding-top: 320px;
+              
+            }
+         
+        
+      }
+          
+        
+      
+    
+  
+  
+
+@media (max-width: 400px) {
+  .container{
+    width: 1px;
+  }
+
+  .carousel-inner .carousel-item img {
+    height: 300px; /* Adjust image height for smaller screens */
+  }
+
+  .carousel-caption h3 {
+    font-size: 16px; /* Smaller heading */
+    margin-bottom: 10px;
+    color: rgb(242, 218, 5); /* Keep the same color for consistency */
+  }
+
+  .carousel-caption h1 {
+    font-size: 24px; /* Smaller font size for main text */
+    margin-bottom: 40px;
+    line-height: 1.3; /* Adjust line height for readability */
+  }
+
+  .carousel-caption {
+    bottom: 20px; /* Move caption higher for better visibility */
+    padding: 0 10px; /* Add some padding for better spacing */
+  }
+  
+  .container .col-md-6 img{
+    
+    margin-left: 1px;
+  }
+  .one{
+    height: 950px;
+  }
+  .booking .col-md-6{
+    height: 290px;
+  }
+  
+}
