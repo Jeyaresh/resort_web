@@ -377,7 +377,52 @@ a, a:hover {
   background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50%);
 }
 
+
+
+
+
+
+
+.sidebar{
+  
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.108);
+  backdrop-filter: blur(5px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+.sidebar li{
+  width: 100%;
+
+}
+.sidebar a{
+  width: 100%;
+}
+.menu{
+  display: none;
+}
+
+
+
+
+
+
+
+
 @media screen and (min-width: 769px) {
+  .as{
+    width: 100%;
+    height: auto;
+  }
+  
   .green::before {
     background-image: linear-gradient(-80deg, rgba(121, 221, 9, 0.1), transparent 50%);
   }
@@ -440,4 +485,32 @@ a, a:hover {
 }
 .bu:hover{
 background-color: #0076bd;
+}
+
+
+
+
+@media(max-width: 800px){
+  .hideonmobile{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .as-text h1 {
+    font-size: 24px;
+  }
+
+  .as-text h5 {
+    font-size: 12px;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .tt{
+    font-size: 2px;
+  }
 }
