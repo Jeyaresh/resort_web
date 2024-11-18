@@ -339,16 +339,16 @@ h4{
 
 
 .sidebar{
+  
   position: fixed;
   top: 0;
-  right: 0;
-  height: 100vh;
+  height: 100%;
   width: 250px;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.108);
   backdrop-filter: blur(5px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -698,11 +698,11 @@ h4{
   
   
 
-@media (max-width: 400px) {
-  .container{
-    width: 1px;
+@media (max-width: 450px) {
+  
+  .responsive-hr {
+    width: 150px; /* Adjust width for mobile */
   }
-
   .carousel-inner .carousel-item img {
     height: 300px; /* Adjust image height for smaller screens */
   }
@@ -731,8 +731,10 @@ h4{
   .one{
     height: 950px;
   }
+  .ro{
+    height: 1px;
+  }
   .booking .col-md-6{
     height: 290px;
   }
-  
 }
