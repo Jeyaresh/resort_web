@@ -18,7 +18,7 @@
           </svg>
         </a>
       </li>
-      <li><a href="index.html">Home</a></li>
+      <li><a href="home.html">Home</a></li>
       <li><a href="room.html">Rooms</a></li>
       <li><a href="dining.html">Dining & Restaurant</a></li>
       <li><a href="event.html">Events & Activity</a></li>
@@ -31,7 +31,7 @@
     <div class="ab"></div>
     
     <ul>
-      <li class="hideonmobile"><a href="index.html">Home</a></li>
+      <li class="hideonmobile"><a href="home.html">Home</a></li>
       <li class="hideonmobile"><a href="room.html">Rooms</a></li>
       <li class="hideonmobile"><a href="dining.html">Dining & Restaurant</a></li>
       <li class="hideonmobile"><a href="event.html">Events & Activity</a></li>
@@ -48,19 +48,24 @@
       </li>
     </ul>
   </nav>
+
+
     <div class="as">
      
-      <img src="css/gallery.jpg" alt="" height="200px" width="100%" style="height: 500px;"> <div class="as-text">
+      <img src="css/gallery.jpg" alt=""> <div class="as-text">
         <h1 style="font-family:'Times New Roman', Times, serif; margin-top:70px; font-size: 90px;">Property Snapshot
           </h1>
           <h5 style="font-family:'Times New Roman', Times, serif; margin-top:100px;text-align: center; "> View the snape and be the part of it.<br>And make the wonderfull  <br> memories</h5>
         </div>
     </div>
-    <h1 style="text-align: center; margin-top: 30px;color:rgb(254, 254, 254); font-family:'Times New Roman', Times, serif;font-size: 50px;">EXPLORE THE ALBUM</h1>
-    <hr style="color: rgb(6, 253, 229); width: 535px; margin-left: 30%;">
+    <div class="explore" >
+
+    
+    <h1 >EXPLORE THE ALBUM</h1>
+    <hr >
       <p style="text-align: center; margin-top: 20px;color: white;">A snapshot of the urban resort that narrates the visual language of nature seamlessly weaved with <br> splendid architecture offering luxury accommodation, unique dining concepts and <br> picturesque outdoor settings.
       </p>
-
+</div>
 <div id="myBtnContainer"  style="text-align: center; margin-top: 30px;">
   <button class="btn1" onclick="filterSelection('all')"> SHOW ALL</button>
   <button class="btn1" onclick="filterSelection('EXTERIOR')"> EXTERIOR</button>
@@ -69,7 +74,9 @@
   <button class="btn1" onclick="filterSelection('EVENTS')"> EVENTS</button>
 </div>
 
-<div class="container"style="margin-top: 30px;">
+
+<div class="gall" >
+<div class="container">
   <div class="filterDiv ROOMS" style="background-image:url(css/roomg1.jpg);background-size: cover;"></div>
   <div class="filterDiv EVENTS" style="background-image:url(css/even1.jpg);background-size: cover;"></div>
   <div class="filterDiv EVENTS" style="background-image:url(css/even2.jpg);background-size: cover;"></div>
@@ -113,7 +120,7 @@
   <div class="filterDiv EXTERIOR" style="background-image:url(css/ima.jpg);background-size: cover;"></div>
  
  </div>
-
+</div>
 <script>
 filterSelection("all")
 function filterSelection(c) {

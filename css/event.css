@@ -59,16 +59,26 @@ html {
 }
 .as{
   position: relative;
+
 }
 .as img{
-  max-width: 100%;
-  height:300px;
+  
+   width:100%; 
+   height: 500px;
+  
+  
 }
 .as-text{
   position: absolute;
   top: 100px;
   color: white;
   margin-left: 25%;
+}
+.wedding img{
+  height:400px;
+  width:850px;
+   margin-top: 30px; 
+   margin-left: 20%;
 }
 .food{
   margin-top: 20px;
@@ -137,4 +147,28 @@ background-color:rgb(139, 131, 131);
   .menu{
     display: block;
   }
+}
+@media(max-width: 450px){
+.as img{
+  width: 100%;
+  height: auto;
+}
+.as h1{
+  display: none;
+}
+.as h5{
+  display: none;
+}
+.wedding img{
+  width: 90%;
+  height: auto;
+  margin-left: 20px;
+
+}
+.food{
+  width: 70%;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 50px;
+}
 }

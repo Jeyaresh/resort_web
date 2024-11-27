@@ -4,10 +4,12 @@
   padding: 5px;
   overflow: hidden;
   background-color:teal;
+  
 }
 
 li {
   float: left;
+  
 }
 
 li a {
@@ -21,18 +23,46 @@ li a {
   font-family:'Times New Roman', Times, serif;
   transition: color 0.3s ease;
   text-decoration: none;
+  
 
 }
 
 li a:hover {
   color:rgb(4, 4, 4);
+  
 }
 
 
 
+
+
+
+    .about {
+      text-align: center;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 40px;
+      
+    }
+  
+    h1 {
+      color: white;
+      
+    }
+  
+    .responsive-hr {
+      width: 250px;
+      color: white;
+      margin: 0 auto;
+      
+    }
+
+    
 html {
   font-family: sans-serif;
   box-sizing: border-box;
+ 
+    
 }
 
 *, *:before, *:after {
@@ -202,6 +232,14 @@ html {
   padding: 35px 15px;
   width: 100%;
 }
+.booking{
+  border: solid 1px rgba(0, 0, 0, 0);
+   height: 370px; 
+   width: 100%;
+   margin-top: 60px;
+   background-color: rgb(53, 52, 52)
+}
+
 
 @media screen and (min-width:1380px) {
   .box-container {
@@ -677,18 +715,8 @@ h4{
                
                 margin-left: 42px;
               }
-              .contact {
-                
-                background-color: black;
-                
               
-              }
-            footer{
-              
-              padding-top: 320px;
-              
-            }
-         
+            
         
       }
           
@@ -704,16 +732,19 @@ h4{
     width: 150px; /* Adjust width for mobile */
   }
   .carousel-inner .carousel-item img {
+    
     height: 300px; /* Adjust image height for smaller screens */
   }
 
   .carousel-caption h3 {
+    
     font-size: 16px; /* Smaller heading */
     margin-bottom: 10px;
     color: rgb(242, 218, 5); /* Keep the same color for consistency */
   }
 
   .carousel-caption h1 {
+    
     font-size: 24px; /* Smaller font size for main text */
     margin-bottom: 40px;
     line-height: 1.3; /* Adjust line height for readability */
@@ -729,12 +760,45 @@ h4{
     margin-left: 1px;
   }
   .one{
+    width: 428px;
     height: 950px;
   }
   .ro{
+    
     height: 1px;
   }
-  .booking .col-md-6{
-    height: 290px;
+ 
+  .booking{
+    width: 428px;
+    height: 900px
   }
+  .f{
+    width: 428px;
+    margin-top: -49px;
+  }
+  body{
+    width: 85%;
+  }
+.as{
+  width: 428px;
+}
+ul{
+  width: 428px;
+}
+.about{
+  width: 428px;
+}
+.cl1{
+  
+  margin-left: 33px;
+  
+}
+.car1{
+  width: 428px;
+}
+.cl{
+  margin-left: 27px;
+  height: auto;
+  background-color: black;
+}
 }

@@ -37,14 +37,31 @@ ul {
     position: relative;
   }
   .as img{
-    max-width: 100%;
-    height:300px;
+
+	height:200px;
+	width:100%;
+	height: 500px;
+    
+    
   }
   .as-text{
     position: absolute;
     top: 100px;
     color: white;
     margin-left: 25%;
+  }
+
+  .explore hr{
+	color: rgb(6, 253, 229); 
+	width: 535px; 
+	margin-left: 30%;
+  }
+
+  .explore h1{
+	text-align: center; 
+	margin-top: 30px;color:rgb(254, 254, 254); 
+	font-family:'Times New Roman', Times, serif;
+	font-size: 50px;
   }
  body {
 	background-color: #f2f2f2;
@@ -78,6 +95,9 @@ div.gallery {
 div.gallery ul {
 	list-style-type: none;
 	margin-left: 35px;
+}
+.container{
+	margin-top: 30px;
 }
 
 /* animation */
@@ -225,5 +245,41 @@ p.attribution a {
 	.menu{
 	  display: block;
 	}
+  }
+  
+  @media(max-width: 450px){
+.as img{
+	width: 100%;
+	height: auto;
+}
+.as h1 {
+	display: none;
+}
+.as h5{
+	display: none;
+}
+.explore{
+	width: 100%;
+	height: auto;
+}
+.explore hr{
+	width: 80%;
+	margin-left: 10%;
+}
+.explore h1{
+	font-size: 40px;
+}
+.gall{
+	
+	width: 100%;
+	
+	margin-left: -7px;
+}
+.filterDiv{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
   }
   

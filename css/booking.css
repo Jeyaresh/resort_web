@@ -18,8 +18,8 @@
   margin: 0%;
 }
 .as img{
-  max-width: 100%;
-  height:300px;
+  width: 100%;
+  height: 500px;
 }
 .as-text{
   position: absolute;
@@ -30,6 +30,16 @@
 .bb{
     
     margin-top: 20px;
+    background-color: black;
+}
+.nn{
+  border-radius: 180px;
+  margin-top: 80px;
+}
+.nn hr{
+  width: 280px; 
+  margin-left: 25%; 
+  color:rgb(2, 253, 253)
 }
 .cc{
     border: solid rgba(0, 0, 0, 0) 1px;
@@ -179,4 +189,41 @@
     .menu{
       display: block;
     }
+  }
+
+
+  @media(max-width: 450px){
+.as img{
+  width: 100%;
+  height: auto;
+}
+.as-text{
+  display: none;
+}
+.cc{
+  width: 100%;
+  
+}
+.nn{
+  
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+ border-radius: 100px;
+  margin-left: 7px;
+ 
+}
+
+.nn hr{
+  margin-left: 20px;
+}
+.booking-form.booking-form{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot{
+  margin-top: 450px;
+}
   }

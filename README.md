@@ -1,1 +1,0 @@
-# resort_web
